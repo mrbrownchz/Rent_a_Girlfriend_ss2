@@ -1,8 +1,25 @@
-*{
+* {
     font-family: 'Quicksand';
 }
 
-body{
-    margin: 0;
+body {
+    margin : 0;
     padding: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgb(224, 224, 224);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background   : var(--pink);
+    border-radius: 10px;
 }

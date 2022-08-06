@@ -11,11 +11,11 @@
     <meta name="keywords" content="宮島礼吏,彼女お借りします,かのかり,マガジン,水原千鶴, 七海麻美,更科瑠夏,桜沢墨,雨宮天,悠木碧,東山奈央,高橋李依,堀江瞬,レンタル彼女,アニメ,ラブコメ">
     <link rel="icon" href="./media/img/favicon.ico" sizes="any">
 
-    <meta property="og:url" content="https://www.your-domain.com/your-page.html" />
+    <meta property="og:url" content="https://www.brown-anime-website-01.tk/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="TVアニメ『彼女、お借りします』第2期公式サイト" />
     <meta property="og:description" content="『 เว็บไซต์ทำเล่นช่วงว่าง 』 ทำเพื่อทดสอบทักษะและเรียนรู้ไว้ใช้ในอนาคต" />
-    <meta property="og:image" content="https://www.your-domain.com/path/image.jpg" />
+    <meta property="og:image" content="https://www.brown-anime-website-01.tk/media/v_chizuru_pc.webp" />
     <!-- css -->
     <link rel="stylesheet" href="./css/gobal.css">
     <link rel="stylesheet" href="/css/index.css">
@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="./css/footer.css">
 
     <link rel="stylesheet" href="./css//layout/yt_dialog.css">
+    <link rel="stylesheet" href="./css/layout/loading.css">
+
+
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- fonts -->
@@ -32,7 +35,48 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
-<body>
+<body style="overflow: hidden;">
+    <!-- loading page -->
+    <div class="loading d-flex align-items-center justify-content-center" id="loader">
+        <div class="icon m-3">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="100%" height="100%"
+                viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path
+                        d="M1343 4819 c-574 -49 -1046 -394 -1238 -906 -137 -364 -137 -885 0 -1284 49 -141 151 -350 231 -472 206 -315 586 -691 1119 -1108 314 -246 972 -708 1062 -746 48 -20 75 -9 234 93 536 346 1142 810 1509 1158 505 479 741 872 831 1382 19 107 23 165 23 344 0 226 -9 307 -49 470 -135 539 -530 914 -1096 1040 -130 29 -324 42 -464 30 -261 -21 -454 -85 -644 -212 -74 -51 -208 -176 -272 -256 l-34 -43 -55 72 c-143 185 -382 337 -626 398 -166 41 -355 55 -531 40z" />
+                </g>
+            </svg>
+        </div>
+        <div class="icon m-3">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="100%" height="100%"
+                viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path
+                        d="M1343 4819 c-574 -49 -1046 -394 -1238 -906 -137 -364 -137 -885 0 -1284 49 -141 151 -350 231 -472 206 -315 586 -691 1119 -1108 314 -246 972 -708 1062 -746 48 -20 75 -9 234 93 536 346 1142 810 1509 1158 505 479 741 872 831 1382 19 107 23 165 23 344 0 226 -9 307 -49 470 -135 539 -530 914 -1096 1040 -130 29 -324 42 -464 30 -261 -21 -454 -85 -644 -212 -74 -51 -208 -176 -272 -256 l-34 -43 -55 72 c-143 185 -382 337 -626 398 -166 41 -355 55 -531 40z" />
+                </g>
+            </svg>
+        </div>
+        <div class="icon m-3">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="100%" height="100%"
+                viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path
+                        d="M1343 4819 c-574 -49 -1046 -394 -1238 -906 -137 -364 -137 -885 0 -1284 49 -141 151 -350 231 -472 206 -315 586 -691 1119 -1108 314 -246 972 -708 1062 -746 48 -20 75 -9 234 93 536 346 1142 810 1509 1158 505 479 741 872 831 1382 19 107 23 165 23 344 0 226 -9 307 -49 470 -135 539 -530 914 -1096 1040 -130 29 -324 42 -464 30 -261 -21 -454 -85 -644 -212 -74 -51 -208 -176 -272 -256 l-34 -43 -55 72 c-143 185 -382 337 -626 398 -166 41 -355 55 -531 40z" />
+                </g>
+            </svg>
+        </div>
+        <div class="icon m-3">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="100%" height="100%"
+                viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path
+                        d="M1343 4819 c-574 -49 -1046 -394 -1238 -906 -137 -364 -137 -885 0 -1284 49 -141 151 -350 231 -472 206 -315 586 -691 1119 -1108 314 -246 972 -708 1062 -746 48 -20 75 -9 234 93 536 346 1142 810 1509 1158 505 479 741 872 831 1382 19 107 23 165 23 344 0 226 -9 307 -49 470 -135 539 -530 914 -1096 1040 -130 29 -324 42 -464 30 -261 -21 -454 -85 -644 -212 -74 -51 -208 -176 -272 -256 l-34 -43 -55 72 c-143 185 -382 337 -626 398 -166 41 -355 55 -531 40z" />
+                </g>
+            </svg>
+        </div>
+    </div>
+    <!-- end loading page -->
+
     <!-- dialog -->
     <div class="yt-dialog" id="yt-dialog" style="display: none;">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/nIa0mUDj3I0"
@@ -136,6 +180,12 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
     </div>
+
+    <!-- facebock -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v14.0&appId=303408668584670&autoLogAppEvents=1"
+        nonce="E0dANwMe"></script>
     <footer>
         <div class="social">
             <a class="twitter-timeline" href="https://twitter.com/kanokari_anime?ref_src=twsrc%5Etfw"></a>
@@ -147,6 +197,10 @@
                 alt="">
             <div class="mt-5">
                 <div>SHARE</div>
+                <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/"
+                    data-layout="button" data-size="large"><a target="_blank"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+                        class="fb-xfbml-parse-ignore"></a></div>
             </div>
             <div class="mt-5">Created by <a href="https://twitter.com/Br6wnDev">Br6wn Dev</a></div>
             <a href="https://kanokari-official.com/" target="_blank">Kanokari - Official Website</a>
@@ -156,6 +210,9 @@
     <script src="./js/main_fade.js"></script>
     <script src="./js/open_pv.js"></script>
     <script src="./js/start.js"></script>
+    <script src="./js/loader.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/c71284b645.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
