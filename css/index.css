@@ -1,0 +1,287 @@
+/* sec1 */
+
+.sec1-fade-show {
+    position: relative;
+}
+
+.sec1-fade-show .fade-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* box-shadow: var(--pink) 5px 5px; */
+}
+.main-fade{
+    position: absolute;
+    width: 100%;
+    transition: .5s ease 0s;
+}
+.sel-menu{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.sel-menu .btn{
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: none;
+}
+
+.sel-menu .btn img{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -30%);
+    width: 200%;
+    transition: .2s ease 0s;
+}
+ 
+.sel-menu .btn:hover img{
+    filter: brightness(.7);
+}
+
+
+
+/* end sec1 */
+
+.face-show{
+    width: 50%;
+}
+
+.face-show img{
+    width: 100%;
+}
+
+
+/* sec2 */
+.sec2{
+    margin: auto;
+}
+
+.sec2 .logo{
+    width: 70%;
+}
+.sec2 .pulse{
+    width: 100%;
+    animation: pulse 2s infinite;
+}
+
+
+.sec2 .on-air img{
+    width: 90%;
+}
+
+.sec2 .mbs{
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    background: var(--pink);
+}
+
+
+.sec2 .preview-anime{
+    position: relative;
+    cursor: pointer;
+}
+
+.sec2 .preview-anime img{
+    width: 100%;
+}
+
+.sec2 .preview-anime::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    opacity: 0;
+    transition: .3s ease 0s;
+    background: linear-gradient(45deg,#ebae3c 0,#d5436f 100%);
+}
+
+.sec2 .preview-anime:hover::before{
+    content: '';
+    transition: .3s ease 0s;
+    opacity: .5;
+    filter: brightness(1.5);
+}
+
+.sec2 .preview-anime::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    opacity: 0;
+    background: url(../media/img/icon_play_circle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .3s ease 0s;
+}
+
+.sec2 .preview-anime:hover::after{
+    opacity: 1;
+}
+
+.news-box{
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+}
+
+.news-box:hover{
+    color: var(--pink);
+}
+
+.news-box .date{
+    color: var(--pink);
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.news-box .post{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .3s ease 0s;
+    font-weight: bold;
+}
+
+.news-box .post::after{
+    content: "MORE→";
+    position: relative;
+    color: rgb(231, 49, 110);
+    line-height: 1;
+    font-family: Quicksand, sans-serif;
+    font-weight: 700;
+}
+
+
+/* bg slide */
+.bg-slide{
+    background: url(../media/img/slide/mami.jpg);
+    background-size: 2136px auto;
+    width: 100%;
+    height: 200px;
+    animation: slides 20s infinite linear;
+    transition: .5s ease 0s;
+}
+
+/* news */
+.news{
+    width: 60%;
+}
+
+.news .text{
+    font-size: 150px;
+}
+
+@keyframes slides {
+    to{
+        background-position: -120rem 0px;
+    }
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
+}
+
+.iframe-yt{
+    width: 50%;
+    height: 450px;
+}
+/* responsive */
+
+@media screen and (max-width: 1380px) {
+    .news{
+        width: 70%;
+    }
+
+    .news .text{
+        font-size: 120px;
+    }
+
+    .iframe-yt{
+        width: 70%;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .news{
+        width: 100%;
+    }
+
+    .news .text{
+        font-size: 100px;
+    }
+
+    .iframe-yt{
+        width: 90%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sec1-fade-show .fade-img{
+        position: relative;
+        height: 100%;
+    }
+
+    .sec1-fade-show .sel-menu{
+        display: flex;
+        justify-content: space-around;
+        display: none;
+    }
+
+    .sec1-fade-show .sel-menu .btn{
+        width: 70px;
+        height: 70px;
+        margin: 0;
+    }
+
+    .sec1-fade-show .sel-menu .btn img{
+        width: 100%;
+        /* right: 0;
+        top: 50%;
+        transform: translateY(-55%); */
+        text-align: center;
+    }
+
+    .mbs{
+        font-size: 75%;
+    }
+
+    .pulse{
+        display: none;
+    }
+
+    .news .text{
+        font-size: 50px;
+    }
+    .news .deco{
+        display: none;
+    }
+
+
+}
+

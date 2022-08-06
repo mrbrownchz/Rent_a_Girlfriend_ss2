@@ -1,0 +1,67 @@
+.yt-dialog{
+    background: rgba(255, 255, 255, 0.671);
+    position: fixed;
+    z-index: 1000000;
+    height: 100%;
+    width: 100%;
+    transition: .3s ease 0s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade .5s ease;
+}
+
+.close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.close-btn::before{
+    content: '';
+    position: absolute;
+    background: var(--pink);
+    height: 1px;
+    width: 100%;
+    transform: rotateZ(45deg);
+    top: 20px;
+    transition: .5s ease 0s;
+}
+
+.close-btn::after{
+    content: '';
+    position: absolute;
+    background: var(--pink);
+    height: 1px;
+    width: 100%;
+    transform: rotateZ(-45deg);
+    top: 20px;
+    transition: .5s ease 0s;
+}
+
+.close-btn:hover::before{
+    transform: rotateZ(-45deg);
+}
+
+
+.close-btn:hover::after{
+    transform: rotateZ(45deg);
+}
+
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+

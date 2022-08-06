@@ -1,0 +1,42 @@
+footer{
+    background: var(--pink);
+    display: flex;
+    justify-content: center;
+    padding: 5rem 1rem;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+}
+
+.social{
+    width: 500px;
+    height: 400px;
+    overflow-y: scroll;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.media{
+    color: white;
+    text-align: center;
+    font-size: 90%;
+    font-weight: 600;
+}
+
+.media img{
+    width: 50%;
+    border: 2px solid white;
+}
+
+.media a{
+    color: white;
+    text-decoration: underline;
+}
+
+.media a:hover{
+    color: rgb(116, 255, 88);
+}
+
+@media screen and (max-width: 767px) {
+    .media img{
+        width: 100%;
+    }
+}
