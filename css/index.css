@@ -209,6 +209,10 @@
     width: 50%;
     height: 450px;
 }
+
+/* facebook btrn */
+.fb-share-button a{
+}
 /* responsive */
 
 @media screen and (max-width: 1380px) {

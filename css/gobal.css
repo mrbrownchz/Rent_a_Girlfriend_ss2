@@ -9,7 +9,7 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 
 /* Track */
@@ -20,6 +20,6 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background   : var(--pink);
-    border-radius: 10px;
+    background   : var(--sumi);
+    /* border-radius: 10px; */
 }
