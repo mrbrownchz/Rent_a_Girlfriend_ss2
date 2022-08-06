@@ -32,7 +32,7 @@ document.onkeydown = function (e) {
     debugger;
     var end = +new Date();
     if(isNaN(start) || isNaN(end) || end - start > allow) {
-    	alert('DEVTOOLS detected. all operations will be terminated.');
+    	alert('DEVTOOLS detected. หยุดเลยๆ จะทำอะไรน่ะ ฮั่นแน่----.');
       document.write('DEVTOOLS detected.');
     }
   }
